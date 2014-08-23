@@ -1,0 +1,107 @@
+/* Page Styles
+================================ */
+
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font: normal 1em/1.5 sans-serif;
+	color: #222;
+	background-color: #e4e4e4;
+}
+
+
+/* Main Layout Styles
+================================ */
+
+.main-header {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #588cb9;
+}
+
+.main-logo {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 1.5em;
+}
+
+.main-logo a,
+.main-nav a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+		color: white;
+    border-radius: 5px;
+}
+
+.main-logo a {
+    background-color: #5fcf80;
+}
+
+.main-nav a {
+    background-color: #f79797;
+}
+
+.main-nav li {
+    list-style: none;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+.main-footer {
+	text-align: center;
+	margin-top: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+ 	background-color: #7f7f7f;
+}
+
+.banner {
+    text-align: center;
+}
+
+/* Media queries
+================================ */
+
+@media (min-width: 768px) {
+
+		body {
+			padding-top: 90px;
+		}
+
+		.main-header {
+			position: fixed;
+			width: 100%;
+			top: 0;
+		}
+
+    .hide-mobile {
+			display: initial;
+		}
+
+		.main-nav {
+			text-align: right;
+		}
+
+    .main-nav li {
+        display: inline-block;
+				margin-left: 10px;
+				margin-top: 6px;
+    }
+
+}
+
+
+@media (min-width: 1px) and (max-width: 767px)  {
+
+	.main-nav li {
+		margin-top: 12px;
+	}
+
+}
